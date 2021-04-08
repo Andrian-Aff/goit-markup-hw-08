@@ -1,0 +1,21 @@
+.header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-right: 92px;
+  color: #000;
+}
+
+.logo {
+  display: block;
+  font-family: var(--secondary-font);
+  @include font($fs: 26px, $fw: 700, $lh: 31px);
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.logo__accent-text {
+  color: var(--accent-color);
+}

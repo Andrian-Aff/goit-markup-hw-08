@@ -1,0 +1,63 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.grid__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.progect-link {
+  display: block;
+  transition: box-shadow var(--transition-funktion);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.progect-link__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 63px 24px;
+  @include font($lh: 28px);
+  background-color: var(--accent-color);
+  color: var(--accent-color-text);
+  overflow: auto;
+  transform: translateY(101%);
+  transition: transform var(--transition-funktion);
+
+  .project-link:hover &,
+  .project-link:focus & {
+    transform: translateY(0%);
+  }
+}
+
+.progect-link__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.progect-link__lable {
+  border: 1px solid var(--border-color-projects);
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.progect-link__title {
+  @include font($fw: 700, $ls: 0.03em);
+  margin-bottom: 4px;
+  color: var(--main-color);
+}
+
+.progect-link__text {
+  @include font($fs: 16px, $lh: 30px);
+  color: var(--description-color);
+}

@@ -1,0 +1,33 @@
+.possabilities {
+  padding-bottom: 94px;
+}
+.possibilities-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.possibilities-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.possibilities-list__wrepper {
+  position: relative;
+  display: flex;
+}
+
+.possibilities-list__box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include font($fs: 14px, $fw: 700, $lh: 16px);
+  text-transform: uppercase;
+  color: var(--accent-color-text);
+  width: 100%;
+  min-height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
