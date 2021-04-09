@@ -1,24 +1,63 @@
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.features-list {
-  display: flex;
-}
-
-.features-list__item {
-  &:not(:last-child) {
-    margin-right: 30px;
+@media screen and (max-width: 1599px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1599px) {
+  .features-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .features-list__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .features-list__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/*.features-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}*/
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+}
+
 .features-list__icon {
+  /*
   display: flex;
   align-items: center;
   justify-content: center;
   width: 270px;
   height: 120px;
+  */
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: var(--btn-background-portfolio);
@@ -31,5 +70,6 @@
 .features-list__description {
   @include font($fs: 14px, $lh: 24px);
   color: var(--description-color);
-  min-width: 270px;
+
+  max-width: 270px;
 }

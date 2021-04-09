@@ -1,6 +1,11 @@
 .possabilities {
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1599px) {
+    display: none;
+  }
 }
+
 .possibilities-list {
   display: flex;
   justify-content: space-between;

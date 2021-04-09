@@ -18,7 +18,6 @@ ol {
 img {
   display: block;
   max-width: 100%;
-  max-height: 100%;
   height: auto;
 }
 
@@ -41,11 +40,28 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 :root {
@@ -487,25 +503,57 @@ body {
   fill: var(--accent-color-text);
 }
 
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1599px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
-.features-list {
-  display: flex;
+@media screen and (min-width: 1600px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.features-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
+@media screen and (min-width: 1599px) {
+  .features-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .features-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+/*.features-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}*/
 .features-list__icon {
+  /*
   display: flex;
   align-items: center;
   justify-content: center;
   width: 270px;
   height: 120px;
+  */
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: var(--btn-background-portfolio);
@@ -521,7 +569,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--description-color);
-  min-width: 270px;
+  max-width: 270px;
 }
 
 .footer {
@@ -791,6 +839,12 @@ body {
 
 .possabilities {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1599px) {
+  .possabilities {
+    display: none;
+  }
 }
 
 .possibilities-list {
