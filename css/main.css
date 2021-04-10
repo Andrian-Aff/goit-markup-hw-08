@@ -530,57 +530,12 @@ body {
   fill: var(--accent-color-text);
 }
 
-@media screen and (max-width: 1599px) {
-  .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .features-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1599px) {
-  .features-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .features-list__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (max-width: 478px) {
-  .features-list__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-/*.features-list__item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}*/
 .features-list__icon {
-  /*
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
-  */
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: var(--btn-background-portfolio);
@@ -588,6 +543,12 @@ body {
 
 .features-list__title {
   margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
 }
 
 .features-list__description {
@@ -596,7 +557,56 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--description-color);
-  max-width: 270px;
+}
+
+@media screen and (max-width: 1199px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features-list__title {
+    text-align: center;
+  }
+  .features-list__item {
+    max-width: 450px;
+  }
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list__item {
+    max-width: 354px;
+  }
+  .features-list__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .features-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .features-list__item {
+    max-width: 270px;
+  }
+  .features-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .footer {
