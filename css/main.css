@@ -670,12 +670,6 @@ body {
   fill: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
-  .float-menu {
-    display: none;
-  }
-}
-
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -776,6 +770,91 @@ body {
 
 .mobile-menu__social-link:hover, .mobile-menu__social-link:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .float-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+  }
+  .menu {
+    display: flex;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .menu__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    transition: color var(--transition-funktion);
+  }
+  .menu__link:hover, .menu__link:focus {
+    color: var(--accent-color);
+  }
+  /* header address*/
+  .contacts-header {
+    margin-left: auto;
+  }
+  .contacts-header__link {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--description-color);
+    transition: color var(--transition-funktion);
+  }
+  .contacts-header__link:hover, .contacts-header__link:focus {
+    color: var(--accent-color);
+  }
+  .contacts-header__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .contacts-header__icon {
+    margin-right: 8px;
+    fill: currentColor;
+    transition: fill var(--transition-funktion);
+  }
+  .contacts-header__link:hover .contacts-header__icon,
+  .contacts-header__link:focus .contacts-header__icon {
+    fill: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  .contacts-header {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header {
+    display: flex;
+  }
+  .contacts-header__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .contacts-header__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .hero {
