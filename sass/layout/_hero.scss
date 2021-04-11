@@ -1,5 +1,4 @@
 .hero__overlay {
-  max-width: 480px;
   height: 400px;
   margin: 0 auto;
   background-image: linear-gradient(
@@ -7,7 +6,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../img/");
+    url("../img/mobile/hero/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,41 +16,64 @@
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .box {
-    background-image: url("photo@2x.png");
+  .hero__overlay {
+    background-image: url("../img/mobile/hero/hero@2x.jpg");
+  }
+}
+
+.hero {
+  background-color: var(--hero-background-color);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+}
+
+.hero__title {
+  margin: auto;
+  max-width: 360px;
+  text-align: center;
+  margin-bottom: 30px;
+  @include font($fs: 26px, $fw: 900, $lh: 42px, $ls: 0.06em);
+  text-transform: uppercase;
+  color: var(--accent-color-text);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__overlay {
+    background-image: url("../img/tablet/hero/hero.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero__overlay {
+      background-image: url("../img/tablet/hero/hero@2x.jpg");
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .hero__overlay {
+    height: 600px;
+    max-width: 1600px;
+    background-image: url("../img/desktop/hero/hero.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero__overlay {
+      background-image: url("../img/desktop/hero/hero@2x.jpg");
+    }
+  }
   .hero {
-    background-color: var(--hero-background-color);
     padding-top: 199px;
     padding-bottom: 200px;
-    text-align: center;
   }
-
-  .hero__overlay {
-    max-width: 1600px;
-    height: 600px;
-    margin: 0 auto;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../img/hero/hero-bg.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
   .hero__title {
-    margin: auto;
     max-width: 696px;
-    text-align: center;
-    margin-bottom: 30px;
     @include font($fs: 44px, $fw: 900, $lh: 60px, $ls: 0.06em);
-    text-transform: uppercase;
-    color: var(--accent-color-text);
   }
 }
