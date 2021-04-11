@@ -13,7 +13,7 @@
   transition: background-color var(--transition-funktion);
 
   &:hover,
-  :focus {
+  &:focus {
     background-color: var(--accent-color);
   }
 }

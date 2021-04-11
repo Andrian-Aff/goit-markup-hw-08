@@ -19,7 +19,6 @@
 .features-list__description {
   @include font($fs: 14px, $lh: 24px);
   color: var(--description-color);
-  // max-width: 270px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -34,8 +33,6 @@
   }
 
   .features-list__item {
-    max-width: 450px;
-
     &:not(:last-child) {
       margin-bottom: 30px;
     }
