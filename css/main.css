@@ -171,7 +171,7 @@ body {
   background-color: var(--accent-color);
   color: var(--accent-color-text);
   overflow: auto;
-  transform: translateY(101%);
+  transform: translateY(100%);
   transition: transform var(--transition-funktion);
 }
 
@@ -216,10 +216,10 @@ body {
   .progect-link__overlay {
     padding: 63px 24px;
   }
-  .project-link:active .progect-link__overlay {
+  .project-link:hover .progect-link__overlay {
     transform: translateY(0%);
   }
-  .progect-link:focus {
+  .progect-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
