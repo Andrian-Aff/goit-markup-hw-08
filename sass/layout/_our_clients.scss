@@ -73,8 +73,8 @@
 
 @media screen and (min-width: 1200px) {
   .our-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: var(--section-pt-desktop);
+    padding-bottom: var(--section-pb-desktop);
   }
 
   .clients-list__link {

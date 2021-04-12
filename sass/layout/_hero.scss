@@ -6,7 +6,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../img/mobile/hero/hero.jpg");
+    url("../images/hero/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,7 +17,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: url("../img/mobile/hero/hero@2x.jpg");
+    background-image: url("../images/hero/hero-mobile@2x.jpg");
   }
 }
 
@@ -40,7 +40,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__overlay {
-    background-image: url("../img/tablet/hero/hero.jpg");
+    background-image: url("../images/hero/hero-tablet.jpg");
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -48,7 +48,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero__overlay {
-      background-image: url("../img/tablet/hero/hero@2x.jpg");
+      background-image: url("../images/hero/hero-tablet@2x.jpg");
     }
   }
 }
@@ -57,7 +57,7 @@
   .hero__overlay {
     height: 600px;
     max-width: 1600px;
-    background-image: url("../img/desktop/hero/hero.jpg");
+    background-image: url("../images/hero/hero-desktop.jpg");
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -65,7 +65,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero__overlay {
-      background-image: url("../img/desktop/hero/hero@2x.jpg");
+      background-image: url("../images/hero/hero-desktop@2x.jpg");
     }
   }
   .hero {
