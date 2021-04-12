@@ -1,21 +1,23 @@
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+.grid__item {
+  margin-top: 30px;
 }
 
-.grid__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+.progect-link__title {
+  @include font($fw: 700, $ls: 0.03em);
+  margin-bottom: 4px;
+  color: var(--main-color);
+}
+
+.progect-link__text {
+  @include font($fs: 16px, $lh: 30px);
+  color: var(--description-color);
 }
 
 .progect-link {
   display: block;
   transition: box-shadow var(--transition-funktion);
 
-  &:hover,
+  &:active,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -26,7 +28,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   @include font($lh: 28px);
   background-color: var(--accent-color);
   color: var(--accent-color-text);
@@ -34,7 +36,7 @@
   transform: translateY(101%);
   transition: transform var(--transition-funktion);
 
-  .project-link:hover &,
+  .project-link:active &,
   .project-link:focus & {
     transform: translateY(0%);
   }
@@ -51,13 +53,41 @@
   padding: 20px 24px;
 }
 
-.progect-link__title {
-  @include font($fw: 700, $ls: 0.03em);
-  margin-bottom: 4px;
-  color: var(--main-color);
+@media screen and(min-width: 768px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .grid__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
-.progect-link__text {
-  @include font($fs: 16px, $lh: 30px);
-  color: var(--description-color);
+.progect-link__overlay {
+  padding: 49px 24px;
+}
+
+@media screen and(min-width: 1200px) {
+  .grid__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  .progect-link__overlay {
+    padding: 63px 24px;
+    .project-link:active & {
+      transform: translateY(0%);
+    }
+  }
+
+  .progect-link {
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
 }
