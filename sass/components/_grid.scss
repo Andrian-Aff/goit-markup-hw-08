@@ -2,18 +2,18 @@
   margin-top: 30px;
 }
 
-.progect-link__title {
+.project-link__title {
   @include font($fw: 700, $ls: 0.03em);
   margin-bottom: 4px;
   color: var(--main-color);
 }
 
-.progect-link__text {
+.project-link__text {
   @include font($fs: 16px, $lh: 30px);
   color: var(--description-color);
 }
 
-.progect-link {
+.project-link {
   display: block;
   transition: box-shadow var(--transition-funktion);
 
@@ -24,7 +24,7 @@
   }
 }
 
-.progect-link__overlay {
+.project-link__overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -44,12 +44,12 @@
   }
 }
 
-.progect-link__wrapper {
+.project-link__wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.progect-link__lable {
+.project-link__lable {
   border: 1px solid var(--border-color-projects);
   border-top: none;
   padding: 20px 24px;
@@ -70,7 +70,7 @@
   }
 }
 
-.progect-link__overlay {
+.project-link__overlay {
   padding: 49px 24px;
 }
 
@@ -79,7 +79,7 @@
     flex-basis: calc(100% / 3 - 30px);
   }
 
-  .progect-link__overlay {
+  .project-link__overlay {
     padding: 63px 24px;
 
     .project-link:hover & {
@@ -87,7 +87,7 @@
     }
   }
 
-  .progect-link:hover {
+  .project-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
