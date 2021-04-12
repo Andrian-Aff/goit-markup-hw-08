@@ -28,3 +28,10 @@
 .modal-btn__icon-send {
   margin-left: 10px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe__modal-btn {
+    display: block;
+    margin: 0 auto;
+  }
+}

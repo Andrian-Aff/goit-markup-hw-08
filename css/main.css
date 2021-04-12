@@ -278,6 +278,13 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe__modal-btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -737,6 +744,9 @@ body {
   }
   .footer__container {
     flex-wrap: wrap;
+  }
+  .footer-subscribe__email {
+    max-width: 450px;
   }
   .footer-subscribe {
     width: 100%;
