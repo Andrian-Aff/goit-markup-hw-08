@@ -61,20 +61,8 @@
   transition: color var(--transition-funktion);
 }
 
-.mobile-menu__contacts-link--font-size {
-  color: var(--accent-color);
-  @include font($fs: 34px, $fw: 500, $lh: 40px, $ls: 0.02em);
-}
-
 .mobile-menu__social-list {
   display: inline-flex;
-}
-
-@media screen and (min-width: 400px) {
-  .mobile-menu__social-link {
-    @include font($fs: 18px, $fw: 500, $lh: 22px, $ls: 0.02em);
-    transition: color var(--transition-funktion);
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -113,6 +101,25 @@
 
   .is-open {
     transform: translateY(0) translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 399px) {
+.mobile-menu__contacts-link--font-size {
+  color: var(--accent-color);
+  @include font($fs: 22px, $fw: 500, $lh: 33px, $ls: 0.02em);
+}
+
+@media screen and (min-width: 400px) {
+
+  .mobile-menu__contacts-link--font-size {
+  color: var(--accent-color);
+  @include font($fs: 34px, $fw: 500, $lh: 40px, $ls: 0.02em);
+}
+
+  .mobile-menu__social-link {
+    @include font($fs: 28px, $fw: 500, $lh: 22px, $ls: 0.02em);
+    transition: color var(--transition-funktion);
   }
 }
 
