@@ -94,7 +94,8 @@
     height: 100vh;
     max-width: 480px;
     padding: 48px 40px;
-    background-color: red;
+    z-index: 1;
+    background-color: #fff;
     transform: translateY(-100%) translateX(-50%);
     transition: var(--transition-funktion);
   }
