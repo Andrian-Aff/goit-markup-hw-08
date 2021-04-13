@@ -32,10 +32,6 @@
   margin-bottom: 32px;
 }
 
-.mobile-menu__list {
-  margin-bottom: 302px;
-}
-
 .mobile-menu__link {
   @include font($fs: 40px, $fw: 500, $lh: 47px, $ls: 0.02em);
   color: var(--main-color);
@@ -87,12 +83,13 @@
 
   .mobile-menu {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
-    padding: 0;
     left: 50%;
     width: 100vw;
     height: 100vh;
-    max-width: 480px;
     padding: 48px 40px;
     z-index: 1;
     background-color: #fff;
@@ -125,7 +122,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .float-menu {
+  .float-menu__btn {
     display: none;
   }
 

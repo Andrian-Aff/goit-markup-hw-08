@@ -84,7 +84,10 @@
   }
 
   .footer-subscribe__email {
+    display: block;
     max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
   .footer-subscribe {
     width: 100%;

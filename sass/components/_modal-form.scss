@@ -33,6 +33,12 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .modal-agreement__check-desc {
+    @include font($fs: 8px, $lh: 10px);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal-agreement__check-desc {
     @include font($fs: 14px, $lh: 24px);
