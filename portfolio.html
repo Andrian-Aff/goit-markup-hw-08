@@ -22,20 +22,25 @@
         <header class="header">
             <div class="header__container container">
                 <nav class="navigation">
-                    <a class="logo header__logo link" id="top-logo" lang="en" href="index.html"><span
+                    <a class="logo header__logo link" id="top-logo" lang="en" href="#top-logo"><span
                             class="logo__accent-text">Web</span>Studio</a>
                     <ul class="menu list">
                         <li class="menu__item">
-                            <a class="menu__link link" href="index.html">Студия</a>
+                            <a class="menu__link link menu__link--current" href="">Студия</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link link menu__link--current" href="">Портфолио</a>
+                            <a class="menu__link link" href="portfolio.html">Портфолио</a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link link" href="">Контакты</a>
                         </li>
                     </ul>
                 </nav>
+                <button type="button" class="float-menu__btn" data-menu-button>
+                    <svg class="float-menu__icon" width="40px" height="40px">
+                        <use href="./img/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
                 <ul class="contacts-header list">
                     <li class="contacts-header__item">
                         <a class="contacts-header__link link" href="mailto:info@devstudio.com">
@@ -52,34 +57,28 @@
                             +38 096 111 11 11</a>
                     </li>
                 </ul>
-        
-                <div class="float-menu">
-                    <button type="button" class="float-menu__btn" data-menu-button>
-                        <svg class="float-menu__icon" width="40px" height="40px">
-                            <use href="./img/sprite.svg#icon-menu"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="mobile-menu" data-menu>
-                    <button type="button" class="mobile-menu__close-btn" data-menu-close>
-                        <svg class="mobile-menu__icon" width="40px" height="40px">
-                            <use href="./img/sprite.svg#close-black"></use>
-                        </svg>
-                    </button>
-                    <ul class="mobile-menu__list list">
-                        <li class="mobile-menu__item">
-                            <a href="" class="mobile-menu__link link" href="">Студия</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="portfolio.html" class="mobile-menu__link link">Портфолио</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="" class="mobile-menu__link link">Контакты</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a href="" class="mobile-menu__link link"></a>
-                        </li>
-                    </ul>
+            </div>
+            <div class="mobile-menu" data-menu>
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__icon" width="40px" height="40px">
+                        <use href="./img/sprite.svg#close-black"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link" href="">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="portfolio.html" class="mobile-menu__link link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Контакты</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link"></a>
+                    </li>
+                </ul>
+                <div class="mobile-menu__box">
                     <ul class="mobile-menu__list-contacts list">
                         <li class="mobile-menu__contacts-item">
                             <a class="mobile-menu__contacts-link link mobile-menu__contacts-link--font-size"
