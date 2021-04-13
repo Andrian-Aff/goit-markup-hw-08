@@ -4,10 +4,46 @@
   padding: 40px;
 }
 
+.modal-agreement__check-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: var(--main-font);
+  color: var(--description-color);
+
+  &::before {
+    display: block;
+    margin-right: 8px;
+    content: "";
+    height: 15px;
+    width: 16px;
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-agreement__check-desc {
+    @include font($fs: 12px, $lh: 14px);
+  }
+
+  .modal-form__title {
+    @include font($fs: 20px, $lh: 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-agreement__check-desc {
+    @include font($fs: 14px, $lh: 24px);
+  }
+}
+
 .modal-form__title {
   font-family: var(--main-font);
   @include font($fs: 20px, $lh: 23px);
   text-align: center;
+  font-weight: bold;
   color: var(--main-color);
   margin-bottom: 12px;
 }
@@ -20,7 +56,6 @@
 .modal-form__input {
   width: 100%;
   height: 40px;
-  padding-left: 42px;
   margin-top: 4px;
   border: 1px solid var(--border-modal-form);
   border-radius: 4px;
@@ -80,26 +115,6 @@
 
 .modal-agreement__link {
   color: var(--accent-color);
-}
-
-.modal-agreement__check-desc {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  font-family: var(--main-font);
-  @include font($fs: 14px, $lh: 24px);
-  color: var(--description-color);
-
-  &::before {
-    display: block;
-    margin-right: 8px;
-    content: "";
-    height: 15px;
-    width: 16px;
-    border: 2px solid var(--main-color);
-    border-radius: 4px;
-    cursor: pointer;
-  }
 }
 
 .modal-agreement:checked + .modal-agreement__check-desc::before {
