@@ -1,6 +1,6 @@
-.grid__item {
-  margin-top: 30px;
-}
+// .grid__item {
+//   margin-top: 30px;
+// }
 
 .project-link__title {
   @include font($fw: 700, $ls: 0.03em);
@@ -47,7 +47,6 @@
 .project-link__wrapper {
   position: relative;
   overflow: hidden;
-  z-index: 0;
 }
 
 .project-link__lable {
@@ -58,6 +57,12 @@
 @media screen and (min-width: 450px) {
   .project-link__overlay {
     @include font($fs: 18px, $lh: 28px);
+  }
+}
+
+@media screen and(max-width: 767px) {
+  .grid__item:not(:first-child) {
+    margin-top: 30px;
   }
 }
 
